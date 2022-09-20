@@ -1,0 +1,36 @@
+colors = {'red':'rojo', 'rojo': 'red', 'naranja': 'orange', 'amarillo': 'yellow','verde':'green',\
+    'azul': 'blue', 'violeta': 'violet', 'morado': 'purple','orange': 'naranja', \
+        'yellow': 'marillo', 'green': 'verde', 'blue': 'azul', 'violet': 'violeta', 'purple': 'morado'}
+
+print('selecciona un idioma-Choose a language')
+idioma = input('Español (1)  English (2)')
+
+if idioma == '1':
+        print('Describe el color del arcoiris')  
+        frase = input('EN una frase: ')
+        frase = frase.lower()
+        palabras = frase.split()
+respuesta = ' '
+
+for palabra in palabras:
+        if palabra in colors:
+            respuesta = respuesta + colors[palabra] + ' '
+        else:
+            respuesta = respuesta + palabra + ' '
+
+print(respuesta)
+
+if idioma == '2':
+        print('Describe the color of the rainbow')  
+        frase = input('In a phrase: ')
+        frase = frase.lower()
+        palabras = frase.split()
+respuesta = ' '
+
+for palabra in palabras:
+        if palabra in colors:
+            respuesta = respuesta + colors[palabra] + ' '
+        else:
+            respuesta = respuesta + palabra + ' '
+
+print(respuesta)
